@@ -21,17 +21,7 @@ var connection = mysql.createConnection({
 
 listItems();
 
-inquirer.prompt([
-    {
-        type: "input",
-        name: "userInput",
-        message: "Please select the product ID that you would like to buy",
-        
-    }
-]).then(function(userAnswer){
-   // var input = userAnswer.userInput;
-    
-})
+
 
 function listItems(){
 connection.query("SELECT * FROM products", function(err, res){
@@ -46,5 +36,27 @@ connection.query("SELECT * FROM products", function(err, res){
     console.log(res[i].department_name);
     console.log(res[i].stock_quanity);
     }
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "userInput",
+            message: "Please select the product ID that you would like to buy",
+            
+        }
+    ]).then(function(userAnswer){
+       // var input = userAnswer.userInput;
+       inquirer.prompt([
+           {
+               type: "input",
+               name: "IDinput",
+               message: "How many items would you like to buy"
+           }
+       ])
+        
+    })
 });
 }
+
+//pro
+//add logic to propmt
+//add table style to info
