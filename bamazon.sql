@@ -11,6 +11,7 @@ CREATE TABLE products(
   department_name VARCHAR(45) NOT NULL,
   price DECIMAL(10,2) NOT NULL,
   stock_quanity DECIMAL(10) NOT NULL,
+  highest_bid DECIMAL (10,2) NOT NULL,
   PRIMARY KEY (item_id)
 );
 
