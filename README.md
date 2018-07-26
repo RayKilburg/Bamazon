@@ -1,4 +1,4 @@
 # Bamazon
 
 
-![](bamazon1.PNG)
+![](images/bamazon1.PNG)
