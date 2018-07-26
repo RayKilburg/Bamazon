@@ -28,12 +28,12 @@ function listItems() {
 
     for (i = 0; i < res.length; i++) {
       // console.log(res)
-      console.log("---------------");
-      console.log(res[i].item_id);
-      console.log(res[i].product_name);
-      console.log(res[i].price);
-      console.log(res[i].department_name);
-      console.log(res[i].stock_quanity);
+      console.log("-------------------------------------------------------------");
+      console.log(res[i].item_id + 
+        " \t " + res[i].product_name + 
+        " \t " + res[i].price +
+         " \t " + res[i].department_name +
+          " \t " + res[i].stock_quanity);
     }
     inquirer
       .prompt([
