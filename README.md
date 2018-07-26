@@ -1,3 +1,4 @@
 # Bamazon
 
-![alt text](bamazon1.PNG)
+
+![](bamazon1.PNG)
